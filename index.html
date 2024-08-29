@@ -117,6 +117,9 @@
               <a href="https://haofanwang.github.io/">Haofan Wang</a><sup>1</sup><sup>*</sup>,
             </div>
             <div class="author-block">
+              <a href="https://scholar.google.com/citations?user=a3FI8c4AAAAJ&hl=en">Yanpeng Sun</a><sup>2</sup>,
+            </div>
+            <div class="author-block">
               <a href="https://github.com/wangqixun">Qixun Wang</a><sup>1</sup>,
             </div>
             <div class="author-block">
@@ -174,7 +177,7 @@
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>Code (Coming Soon)</span>
+                  <span>Code</span>
                 </a>
               </span>
 
@@ -184,6 +187,93 @@
         </div>
       </div>
     </div>
+  </section>
+
+
+   <section class="hero teaser">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <img src="./static/images/image1-1.jpg" alt="Teaser Image" height="100%">
+        <h2 class="subtitle has-text-centered">
+           Our CSGO achieves high-quality (1) image(sketch and natural)-driven style transfer, (2) text-driven stylized synthesis, and (3) Our CSGO achieves high-quality text editing-driven stylized synthesis.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              The diffusion model has shown exceptional capabilities in controlled image generation, which has further fueled interest in image style transfer.
+                Existing works mainly focus on training free-based methods (e.g., image inversion) due to the scarcity of specific data.
+                  In this study, we present a data construction pipeline for content-style-stylized image triplets that generates and automatically cleanses stylized data triplets.
+                  Based on this pipeline, we construct a dataset IMAGStyle, the first large-scale style transfer dataset containing 210k image triplets, available for the community to explore and research.
+                  Equipped with IMAGStyle, we propose CSGO, a style transfer model based on end-to-end training, which explicitly decouples content and style features employing independent feature injection.
+                  The unified CSGO implements image-driven style transfer, text-driven stylized synthesis, and text editing-driven stylized synthesis.
+                  Extensive experiments demonstrate the effectiveness of our approach in enhancing style control capabilities in image generation.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+  </section>
+
+<section class="method">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Method</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              Given any content image C and style image S, CSGO aims to generate a plausible target image by combining the content of one image with the style of another, ensuring that the target image maintains the original content's semantics while adopting the desired style.The following figure outlines our approach. It consists of two key components: (1) content control for extracting content information, which is injected into the base model via Controlnet and decoupled cross-attention module; and (2) style control for extracting style information, which is injected into Controlnet and the base model using the decoupled cross-attention module, respectively.
+
+            </p>
+          </div>
+
+          <div class="container is-max-desktop">
+            <img src="./static/images/image3_1.jpg" alt="Image0" height="100%">
+          </div>
+
+          <div class="content has-text-justified">
+            <p>
+              We differ from previous work in the following ways:(1) CSGO is a model based on end-to-end training. No fine-tuning is required for inference. (2) We do not train UNet and thus can preserve the generative power of the original text-to-image model (3) Our approach unifies image-driven style transfer, text-driven style synthesis, and text-editing-driven style synthesis.
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Results</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              The visualisation image below shows the performance of CSGO. Quantitative and visual comparisons with recent methods can be found in the original paper.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
   </section>
 
 
@@ -259,8 +349,38 @@
             <img src="static/images/page8.png">
           </div>
         </div>
+      </div>
 
+      <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b>Style Transfer in Text-to-Image Generation</h2>
+      <div id="results-carousel-more" class="carousel results-carousel">
 
+        <div class="item item-puppet">
+          <div class="carousel-content">
+            <img src="static/images/page10.png">
+          </div>
+        </div>
+
+        <div class="item item-puppet">
+          <div class="carousel-content">
+            <img src="static/images/page10.png">
+          </div>
+        </div>
+      </div>
+
+      <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b>Text-Driven Image Editing</h2>
+      <div id="results-carousel-more" class="carousel results-carousel">
+
+        <div class="item item-puppet">
+          <div class="carousel-content">
+            <img src="static/images/page11.jpg">
+          </div>
+        </div>
+
+        <div class="item item-puppet">
+          <div class="carousel-content">
+            <img src="static/images/page11.jpg">
+          </div>
+        </div>
       </div>
 
     </div>

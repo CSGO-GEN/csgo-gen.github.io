@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="root@10.4.200.40:17040 password (7)" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="root@10.4.200.40:17040 password (7)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/share2/xingpeng/hub/csgo-gen.github.io" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
